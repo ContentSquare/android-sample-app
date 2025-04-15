@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name='Sample'
-include ':CSSampleApp'
+rootProject.name='Contentsquare Sample App (legacy)'
+include ':app'
