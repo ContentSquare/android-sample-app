@@ -27,16 +27,12 @@ android {
             // Set credentials from different source, fallback on Github CI --> see android-ci.yml
              errorAnalysisCrash {
                  uploadCredentials {
-                     mappingFileUploadEnabled = getLocalProperty("SAMPLE_MAPPING_UPLOAD_CLIENT_ID") ?:
-                             System.getenv("SAMPLE_MAPPING_UPLOAD_CLIENT_ID") != null
                      // from gradle.properties
-                     projectId = project.findProperty("SAMPLE_PROJECT_ID")?.toInteger() ?:
-                             System.getenv("SAMPLE_PROJECT_ID")?.toInteger()
+                     projectId = getLocalProperty("SAMPLE_PROJECT_ID")?.toInteger()
                      // from local.properties
-                     clientId = getLocalProperty("SAMPLE_MAPPING_UPLOAD_CLIENT_ID") ?:
-                             System.getenv("SAMPLE_MAPPING_UPLOAD_CLIENT_ID")
+                     clientId = getLocalProperty("SAMPLE_MAPPING_UPLOAD_CLIENT_ID")
                      // from environment variable, is the same than Github CI here
-                     clientSecret = System.getenv("SAMPLE_MAPPING_UPLOAD_CLIENT_SECRET") ?: ""
+                     clientSecret = getLocalProperty("SAMPLE_MAPPING_UPLOAD_CLIENT_SECRET")
                  }
              }
         }
