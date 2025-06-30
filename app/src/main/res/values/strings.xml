@@ -93,4 +93,18 @@
     <!-- UserIdentifierActivity -->
     <string name="user_identifier">User Identifier</string>
     <string name="send_user_identifier">Send User Identifier</string>
+    <string name="sense_ai_description">Sense is an AI-powered analytics agent that surfaces precise and actionable insights from complex data. It delivers fast and relevant guidance by providing quick access to insights and suggesting next steps. Sense integrates quantitative and qualitative data from analytics, session replays, and surveys into one unified view. It goes beyond analysis by recommending clear actions based on your business objectives. You can ask questions and Sense responds by generating dashboards, funnels, and segment analyses within minutes.</string>
+    <string name="sense_ai_description_short">Sense is an AI-powered analytics agent that surfaces precise and actionable insights from complex data. It delivers fast and relevant guidance by providing quick access to insights and suggesting next steps. You can ask questions and Sense responds by generating dashboards, funnels, and segment analyses within minutes.</string>
+    <string name="contentSquare">CSquare</string>
+    <string name="sample_bottom_sheet">Sample Bottom Sheet</string>
+    <string name="bottom_sheets">Bottom sheets</string>
+    <string name="date_and_time_picker">Date picker</string>
+    <string name="alert_dialog">Alert dialog</string>
+    <string name="custom_dialog">Custom dialog</string>
+    <string name="unmasked_item">Unmasked Item</string>
+    <string name="masked_item">Masked Item</string>
+    <string name="ok">OK</string>
+    <string name="alert_message">This is an Alert</string>
+    <string name="alert_title">This contains text which can be masked or unmasked by calling the API</string>
+    <string name="time_picker">Time Picker</string>
 </resources>
