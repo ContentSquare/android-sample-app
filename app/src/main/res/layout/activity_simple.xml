@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:fitsSystemWindows="true"
     android:background="@color/content_bg"
+    android:fitsSystemWindows="true"
     tools:context=".SimpleActivity">
 
     <Button
         android:id="@+id/btnBottomSheets"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/bottom_sheets"
         android:layout_marginTop="100dp"
         android:onClick="openBottomSheets"
-        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/bottom_sheets"
         app:layout_constraintBottom_toTopOf="@+id/btnDatePicker"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_chainStyle="packed"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
         android:id="@+id/btnDatePicker"
@@ -27,40 +27,39 @@
         android:layout_height="wrap_content"
         android:onClick="openDatePicker"
         android:text="@string/date_and_time_picker"
-        app:layout_constraintTop_toBottomOf="@id/btnBottomSheets"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/btnBottomSheets" />
 
     <Button
         android:id="@+id/btnTimePicker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/time_picker"
         android:onClick="openTimePicker"
-        app:layout_constraintTop_toBottomOf="@id/btnDatePicker"
+        android:text="@string/time_picker"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/btnDatePicker" />
 
 
     <Button
         android:id="@+id/btnAlertDialog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/alert_dialog"
         android:onClick="openAlertDialog"
-        app:layout_constraintTop_toBottomOf="@id/btnTimePicker"
+        android:text="@string/alert_dialog"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/btnTimePicker" />
 
     <Button
         android:id="@+id/btnCustomDialog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/custom_dialog"
         android:onClick="openCustomAlertDialog"
-        app:layout_constraintTop_toBottomOf="@id/btnAlertDialog"
+        android:text="@string/custom_dialog"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
-
+        app:layout_constraintTop_toBottomOf="@id/btnAlertDialog" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
