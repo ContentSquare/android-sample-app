@@ -24,9 +24,9 @@ class CustomAlertDialog(
         val imageView = findViewById<ImageView>(R.id.alert_image)
         val okButton = findViewById<Button>(R.id.alert_ok_button)
 
-        messageView?.text = message
-        imageView?.setImageResource(imageResId)
-        okButton?.setOnClickListener {
+        messageView.text = message
+        imageView.setImageResource(imageResId)
+        okButton.setOnClickListener {
             onOkPressed?.invoke()
             dismiss()
         }

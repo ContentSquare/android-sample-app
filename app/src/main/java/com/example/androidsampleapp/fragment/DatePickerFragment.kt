@@ -3,10 +3,10 @@ package com.example.androidsampleapp.fragment
 import android.app.DatePickerDialog
 import android.app.Dialog
 import android.os.Bundle
-import android.util.Log
 import android.widget.DatePicker
 import androidx.fragment.app.DialogFragment
-import com.contentsquare.android.Contentsquare
+import com.contentsquare.android.api.sessionreplay.csqMaskButtonPanel
+import com.contentsquare.android.api.sessionreplay.csqUnMaskHeader
 import java.util.Calendar
 
 class DatePickerFragment(private val onDateSelected: (year: Int, month: Int, day: Int) -> Unit) :
@@ -20,16 +20,13 @@ class DatePickerFragment(private val onDateSelected: (year: Int, month: Int, day
 
         return DatePickerDialog(requireContext(), { _, selectedYear, selectedMonth, selectedDay ->
             onDateSelected(selectedYear, selectedMonth, selectedDay)
-        }, year, month, day)
+        }, year, month, day).also {
+            it.csqMaskButtonPanel()
+            it.csqUnMaskHeader()
+        }
     }
 
     override fun onDateSet(view: DatePicker?, year: Int, month: Int, dayOfMonth: Int) {
         // Add your logic here once the date is set
-    }
-
-    override fun onStart() {
-        super.onStart()
-        val datePickerDialog = dialog as DatePickerDialog
-        Contentsquare.mask(datePickerDialog.javaClass)
     }
 }

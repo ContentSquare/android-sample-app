@@ -4,7 +4,8 @@ import android.app.Dialog
 import android.app.TimePickerDialog
 import android.os.Bundle
 import androidx.fragment.app.DialogFragment
-import com.contentsquare.android.Contentsquare
+import com.contentsquare.android.api.sessionreplay.csqMaskRadialPicker
+import com.contentsquare.android.api.sessionreplay.csqUnMaskHeader
 import java.util.Calendar
 
 
@@ -19,13 +20,9 @@ class TimePickerFragment(
 
         return TimePickerDialog(requireContext(), { _, selectedHour, selectedMinute ->
             onTimeSelected(selectedHour, selectedMinute)
-        }, hour, minute, true)
-    }
-
-    override fun onStart() {
-        super.onStart()
-
-        val timePickerDialog = dialog as TimePickerDialog
-        Contentsquare.mask(timePickerDialog.javaClass)
+        }, hour, minute, true).also {
+            it.csqMaskRadialPicker()
+            it.csqUnMaskHeader()
+        }
     }
 }

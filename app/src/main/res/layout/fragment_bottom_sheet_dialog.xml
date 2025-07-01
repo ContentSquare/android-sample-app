@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/bottom_sheet_image_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -30,12 +30,12 @@
         app:srcCompat="@drawable/sense_ai_image" />
 
     <TextView
-        android:id="@+id/text"
+        android:id="@+id/bottom_sheet_text_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:text="@string/sense_ai_description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_image_view" />
 </androidx.constraintlayout.widget.ConstraintLayout>
