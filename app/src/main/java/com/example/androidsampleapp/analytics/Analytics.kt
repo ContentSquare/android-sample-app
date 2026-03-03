@@ -1,6 +1,5 @@
 package com.example.androidsampleapp.analytics
 
-import android.content.Context
 import android.util.Log
 import com.contentsquare.android.Contentsquare
 import com.contentsquare.android.api.model.Transaction
@@ -32,16 +31,12 @@ object Analytics {
         Contentsquare.resumeTracking()
     }
 
-    fun forgetMe() {
-        Contentsquare.forgetMe()
+    fun optIn() {
+        Contentsquare.optIn()
     }
 
-    fun optIn(context: Context) {
-        Contentsquare.optIn(context)
-    }
-
-    fun optOut(context: Context) {
-        Contentsquare.optOut(context)
+    fun optOut() {
+        Contentsquare.optOut()
     }
 
     fun provideUserId(): String {
