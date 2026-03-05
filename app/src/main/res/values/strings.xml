@@ -32,7 +32,6 @@
     <string name="text_simple_activity">Simple Activity</string>
     <string name="opt_in_label">Opt-In</string>
     <string name="opt_out_label">Opt-Out</string>
-    <string name="forget_me_label">Forget Me</string>
     <string name="stop_tracking_label">Stop Tracking</string>
     <string name="resume_tracking_label">Resume Tracking</string>
     <string name="privacy_option">Privacy options</string>

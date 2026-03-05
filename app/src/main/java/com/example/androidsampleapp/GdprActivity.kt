@@ -18,18 +18,13 @@ class GdprActivity : AppCompatActivity() {
     }
 
     fun optIn(view: View) {
-        Analytics.optIn(this)
+        Analytics.optIn()
         Toast.makeText(applicationContext, "User has Opted In", Toast.LENGTH_SHORT).show()
     }
 
     fun optOut(view: View) {
-        Analytics.optOut(this)
+        Analytics.optOut()
         Toast.makeText(applicationContext, "User has Opted Out", Toast.LENGTH_SHORT).show()
-    }
-
-    fun forgetMe(view: View) {
-        Analytics.forgetMe()
-        Toast.makeText(applicationContext, "Forget Me chosen", Toast.LENGTH_SHORT).show()
     }
 
     fun stopTracking(view: View) {

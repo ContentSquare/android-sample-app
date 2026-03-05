@@ -79,18 +79,6 @@
             app:layout_constraintTop_toBottomOf="@+id/userid_refresh_button" />
 
         <Button
-            android:id="@+id/forgetme_button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:onClick="forgetMe"
-            android:text="@string/forget_me_label"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/optin_button" />
-
-        <Button
             android:id="@+id/stop_tracking_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -100,7 +88,7 @@
             android:text="@string/stop_tracking_label"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/forgetme_button" />
+            app:layout_constraintTop_toBottomOf="@+id/optin_button" />
 
         <Button
             android:id="@+id/resume_tracking_button"
@@ -112,7 +100,7 @@
             android:text="@string/resume_tracking_label"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toBottomOf="@+id/forgetme_button" />
+            app:layout_constraintTop_toBottomOf="@+id/optin_button" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline2"
